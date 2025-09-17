@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seraphin Banza Kiongo | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+  <header>
+    <a class="brand" href="#">
+      <div class="logo">BK</div>
+      <div>
+        <h1>Seraphin  Kiongo</h1>
+        <div class="muted">Web Developer</div>
+      </div>
+    </a>
+    <nav id="nav">
+      <button id="hamburger" aria-expanded="false">☰</button>
+      <ul id="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="intro">
+        <h2>Hello, I'm Seraphin Kiongo</h2>
+        <p class="muted">Front-end focused Web Developer from the DRC. I build responsive, accessible, and performant web experiences using HTML, CSS, and JavaScript.</p>
+        <div class="ctas">
+          <a class="btn" href="#contact">Hire me</a>
+          <a class="btn ghost" href="#projects">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p class="muted">Responsive single-page app demonstrating dynamic content and DOM manipulation.</p>
+          <a class="project-link" href="#">View project →</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p class="muted">CSS Grid & Flexbox gallery with accessible controls and lazy-loading images.</p>
+          <a class="project-link" href="#">View project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">Accessibility</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Seraphin Banza Kiongo. Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+

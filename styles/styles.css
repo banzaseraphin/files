@@ -71,3 +71,40 @@ footer{text-align:center;padding:1rem;background:rgba(15,23,36,0.95);margin-top:
   nav.open ul{display:flex;}
   #hamburger{display:inline-flex;}
 }
+
+
+/* Resume Header */
+.resume-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  animation: fadeInDown 1s ease;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(6,182,212,0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.resume-info h1 {
+  margin: 0;
+}
+.resume-info .muted {
+  color: #9aa6b2;
+}
